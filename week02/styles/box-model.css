@@ -1,0 +1,34 @@
+.callout {
+    max-width: 400px ;
+    margin: 10px; /*como tem apenas um valor de 10px todas as bordas serão aplicadas, um quadrado*/
+    border: 1px solid rgb(0 0 0 / 0.1); /*Isso aplica uma borda de 1 pixel ao redor do elemento com uma linha sólida e uma cor que combina com o fundo do elemento recipiente/pai. A cor é definida para 10% de opacidade.*/
+                /*solid = quer dizer sem pontilhado oou tracejado*/
+                /*rgb(0 0 0 / 0.1): Define a cor da borda como preto (rgb(0, 0, 0)) com 10% de opacidade (/ 0.1)*/
+    padding: 15px; /*Adiciona um espaço interno e a borda, evita que o texto encoste na borda*/
+    background-color: #247; /*=corde de fundo*/
+    color: white; /*Cor do texto*/
+    
+
+	
+}
+
+.callout img {
+    float: right; /*move a imagem para a direita do texto pai*/
+    margin: 0 0 10px 15px;
+    padding: 3px;
+    background-color: white;
+    width:15 0px;
+    height:auto ;
+}
+
+blockquote {
+    margin: 0;
+	
+}
+
+cite {
+	display: block; /*tag de comportamento, faz o elemento cite se comportar como block*/
+    border-top: 1px dotted white; /*adiciona uma borda pontilhada no topo, fazendo uma linha pontilhda separando*/
+    text-align:right ;
+    font-size: smaller; /*fonte ádrão =  menor que o texto padrão*/
+}
