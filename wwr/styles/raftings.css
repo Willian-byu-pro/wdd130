@@ -75,10 +75,28 @@ body{
    .hero img section{
     width: 150px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção original */
-    
- }
-  .footer nav img{
-    width: 10px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção original */
-     max-width: 500px; /* Tamanho máximo para largura */
-  }
+   }  
+
+footer {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    background-color: var(--primary-color);
+    padding: 20px;
+        }
+
+.social-links {
+    display: flex; /* Mantém os ícones na mesma linha */
+    gap: 15px; /* Espaçamento entre as imagens */
+             }
+
+/* Estilização das imagens dos ícones */
+.social-links a img {
+    width: 40px; /* Define a largura da imagem */
+    height: 40px; /* Define a altura da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
+                    }
+
+.social-links a {
+    text-decoration: none; /* Remove o sublinhado */
+                }
