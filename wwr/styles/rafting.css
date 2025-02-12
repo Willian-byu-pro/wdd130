@@ -167,7 +167,7 @@ footer {
   list-style: none;
   gap: 15px; /* Espaçamento entre as imagens */
   align-items: center;
-  flex-grow: 2;
+  flex-grow: 1;
   text-emphasis-color: white;
   gap: 40px; /* Diminui o espaçamento entre itens */
   justify-content: flex-end; /* Move a navegação para a direita */        
@@ -187,3 +187,31 @@ footer {
     gap: 15px;
     justify-content: flex-end; /* Move os ícones para a direita */
   }
+
+  .adventure-section {
+    display: flex;  /* Mantém as imagens em uma única linha */
+    justify-content: space-between; /* Distribui as imagens uniformemente */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem caso a tela seja menor */
+    gap: 15px; /* Espaçamento entre as imagens */
+    padding: 20px;}
+
+
+
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
