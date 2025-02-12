@@ -86,7 +86,7 @@ h1, h2, h3 {
     align-items: center;
     display: flex;
     flex-shrink: 4;
-    flex-grow: 200px;
+    flex-grow: 1;
   }
   
   .hero article img {
@@ -149,7 +149,6 @@ h1, h2, h3 {
 footer {
     
   display: flex;
-  flex-direction: 100px, 100px; /* Organiza os itens em coluna */
   align-items: center; /* Centraliza tudo horizontalmente */
   justify-content: center; /* Centraliza verticalmente */
   background-color: var(--primary-color);
