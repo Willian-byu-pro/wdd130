@@ -147,17 +147,30 @@ h1, h2, h3 {
 
 
 footer {
-    display: flex; /* Ativa o Flexbox */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    background-color: var(--primary-color);
-    padding: 20px;
+    
+  display: flex;
+  flex-direction: 100px, 100px; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza tudo horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center; /* Garante que o texto fique centralizado */
+  gap: 10px; /* Espaço entre os elementos dentro do footer */
 }
 
+
+
 .social-links {
-    display: flex; /* Mantém os ícones na mesma linha */
-    gap: 15px; /* Espaçamento entre as imagens */
-              
+
+  display: flex; /* Mantém os ícones na mesma linha */
+	flex-wrap: wrap;
+  list-style: none;
+  gap: 15px; /* Espaçamento entre as imagens */
+  align-items: center;
+  flex-grow: 2;
+  text-emphasis-color: white;
+  gap: 40px; /* Diminui o espaçamento entre itens */
+  justify-content: flex-end; /* Move a navegação para a direita */        
 }
 
 /* Estilização das imagens dos ícones */
