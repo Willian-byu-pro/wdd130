@@ -5,6 +5,42 @@
     --text-color: #627C85;
 }  
 
+
+
+header{
+  
+  margin: 1rem auto;
+  display:grid;
+  grid-template-columns: auto 1fr; /* Define duas colunas: logo e navegação */
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+
+}
+
+header img {
+  width: 120px; /* Ajuste conforme necessário */
+  height: auto;
+}
+
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+  flex-grow: 2;
+  text-emphasis-color: white;
+  gap: 40px; /* Diminui o espaçamento entre itens */
+    justify-content: flex-end; /* Move a navegação para a direita */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
 /* Estilização de títulos */
 h1, h2, h3 {
     color: var(--primary-color);
@@ -39,14 +75,18 @@ h1, h2, h3 {
   /* Artigo no Hero */
   .hero article {
     position: absolute; /* Posiciona o artigo sobre a imagem */
-    bottom: 10%; /* Distância da base do contêiner */
-    left: 10%; /* Distância do lado esquerdo */
+    bottom: 25%; /* Distância da base do contêiner */
+    left: 25%; /* Distância do lado esquerdo */
     background-color:rgba(8, 37, 57, 0.6); /* Fundo semitransparente para legibilidade */
     color: white;
     padding: 1rem;
     border-radius: 8px; /* Bordas arredondadas */
     max-width: 400px; /* Limita a largura do artigo */
     width: 89%; /* Define a largura do box como 80% da largura total da tela */
+    align-items: center;
+    display: flex;
+    flex-shrink: 4;
+    flex-grow: 200px;
   }
   
   .hero article img {
@@ -64,9 +104,47 @@ h1, h2, h3 {
   }
 
    .hero img section{
-    width: 150px; /* Define a largura da imagem */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção original */
+    
    }  
+
+   .adventures {
+    display: flex;
+    
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha no centro verticalmente */
+    flex-wrap: nowrap; /* Impede que as imagens quebrem a linha */
+    gap: 15px; /* Adiciona espaço entre as imagens */
+    overflow-x: auto; /* Adiciona rolagem horizontal caso necessário */
+    padding: 20px 0;
+}
+
+.adventures figure {
+  text-align: center;
+  width: 150px; /* Define um tamanho fixo para cada imagem */
+  flex-shrink: 0; /* Evita que as imagens diminuam muito */
+}
+
+.adventures img {
+  width: 100%; /* Mantém a responsividade */
+  height: auto;
+  max-width: 10px; /* Tamanho máximo das imagens */
+  border-radius: 8px;
+}
+
+.adventures figcaption {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+ 
+
+
+
 
 footer {
     display: flex; /* Ativa o Flexbox */
@@ -74,20 +152,25 @@ footer {
     align-items: center; /* Alinha verticalmente */
     background-color: var(--primary-color);
     padding: 20px;
-        }
+}
 
 .social-links {
     display: flex; /* Mantém os ícones na mesma linha */
     gap: 15px; /* Espaçamento entre as imagens */
-             }
+              
+}
 
 /* Estilização das imagens dos ícones */
 .social-links a img {
     width: 40px; /* Define a largura da imagem */
     height: 40px; /* Define a altura da imagem */
     object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
-                    }
+    
+   }
 
 .social-links a {
     text-decoration: none; /* Remove o sublinhado */
-                }
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; /* Move os ícones para a direita */
+  }

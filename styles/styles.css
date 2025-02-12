@@ -1,6 +1,8 @@
 nav {
     background-color: grey;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 nav a {
     color: white;
@@ -13,7 +15,7 @@ h1 {
 
 
 main {
-    max-width: 840px;
+
 }
 
 aside {
@@ -46,4 +48,16 @@ footer {
     margin-top: 15px;
     border-top: 1px solid rgb(0, 0, 0 );
     text-align: center;
+}
+
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}     
+
+nav {
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
 }
