@@ -285,8 +285,8 @@ figcaption {
 }
 
 .inf {
-  flex: 1;
-  min-width: 200px; /* Define um tamanho mínimo para as colunas */
+  flex: ;
+  min-width: 240px; /* Define um tamanho mínimo para as colunas */
   max-width: 200px; /* Limita a largura para manter a harmonia */
   padding: 20px;
   background-color: lightgray;
