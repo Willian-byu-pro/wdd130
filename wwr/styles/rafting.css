@@ -97,7 +97,7 @@ h1, h2, h3 {
   }
   
   .hero article p {
-    width: 810%; /* Define a largura do box como 80% da largura total da tela */
+    width: 100%; /* Define a largura do box como 80% da largura total da tela */
     margin: 0; /*Remove qualquer espaço externo (margem) ao redor do parágrafo.*/
     line-height: 1.5; /*Define o espaçamento entre as linhas do texto.*/
     font-size: 1rem;
@@ -116,10 +116,11 @@ h1, h2, h3 {
     display: flex;
     
     justify-content: center; /* Centraliza as imagens */
-    align-items: center; /* Alinha no centro verticalmente */
+    align-items: start; /* Alinha no centro verticalmente */
     flex-wrap: nowrap; /* Impede que as imagens quebrem a linha */
+    flex-direction: row;
     gap: 15px; /* Adiciona espaço entre as imagens */
-    overflow-x: auto; /* Adiciona rolagem horizontal caso necessário */
+     /* Adiciona rolagem horizontal caso necessário */
     padding: 20px 0;
 }
 
@@ -132,7 +133,7 @@ h1, h2, h3 {
 .adventures img {
   width: 100%; /* Mantém a responsividade */
   height: auto;
-  max-width: 10px; /* Tamanho máximo das imagens */
+  max-width: 100px; /* Tamanho máximo das imagens */
   border-radius: 8px;
 }
 
@@ -187,13 +188,190 @@ footer {
     justify-content: flex-end; /* Move os ícones para a direita */
   }
 
-  .adventure-section {
+  .adventure {
     display: flex;  /* Mantém as imagens em uma única linha */
     justify-content: space-between; /* Distribui as imagens uniformemente */
     flex-wrap: wrap; /* Permite que as imagens se ajustem caso a tela seja menor */
     gap: 15px; /* Espaçamento entre as imagens */
     padding: 20px;}
 
+
+
+
+
+
+
+
+
+
+    
+
+figure {
+
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+
+figcaption {
+  background-color: var(--primary-color);
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.func {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+
+  
+  
+}
+
+.func figure img {
+
+  border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+.inf {
+  background-color:rgba(81, 146, 143, 0.6); /* Fundo semitransparente para legibilidade */
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Garante que cada bloco ocupe a largura da .empty-space */
+  box-sizing: border-box;
+}
+
+
+
+
+  .empty-space {
+  display: flex;
+  flex-direction: row; /* Mantém os elementos empilhados horizontalmente */
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  gap: 20px; /* Espaçamento entre as divs .inf */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  
+}
+
+.empty-space h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Espaçamento entre o título e as colunas */
+}
+
+
+
+.item1{
+
+  align-self:center
+}
+
+.inf {
+  flex: 1;
+  min-width: 200px; /* Define um tamanho mínimo para as colunas */
+  max-width: 200px; /* Limita a largura para manter a harmonia */
+  padding: 20px;
+  background-color: lightgray;
+  text-align: left;
+  border-radius: 10px;
+}
+
+
+
+.form-section {
+  display: flex;
+  justify-content: flex-start; /* Alinha o formulário à esquerda */
+  gap: 20px; /* Espaçamento entre o formulário e o espaço vazio */
+  padding: 20px;
+  align-items: flex-start; /* Garante que o conteúdo do formulário fique alinhado ao topo */
+}
+.form-container {
+  width: 50%;
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  padding: 100px 30px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), /* Sombra suave abaixo */
+              0px 1px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave ao redor */
+  transition: box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.form-container:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15), /* Sombra mais intensa quando o mouse passa */
+              0px 3px 15px rgba(0, 0, 0, 0.2); /* Sombra maior e mais suave */
+}
+
+
+/* Ajustes de inputs e textarea para largura completa, mas com limite */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botão com limite de largura */
+button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  max-width: 200px; /* Limita a largura do botão */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Alinha o formulário à esquerda */
+  gap: 20px; /* Espaçamento entre o formulário e o espaço vazio */
+  align-items: flex-start; /* Garante que o conteúdo do formulário fique alinhado ao topo */
+}
+
+.maps, .func {
+  width: 50%; /* Ajuste a largura conforme necessário */
+  gap: 20px;
+}
 
 
 
@@ -208,9 +386,64 @@ figure {
 
 
 figcaption {
-  background-color: #222;
+  background-color: var(--primary-color);
   color: #fff;
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
 }
+
+.func {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+
+  
+  
+}
+
+.func figure img {
+
+  border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+#map {
+  
+  display: flex;
+  border-radius: 20px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), /* Sombra suave abaixo */
+              0px 1px 10px rgba(0, 0, 0, 0.15); /* Sombra mais suave ao redor */
+  transition: box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
+  gap: 5px;
+  width: 47%;
+  height: 400px; /* Adjust height as needed */
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#map:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15), /* Sombra mais intensa quando o mouse passa */
+              0px 3px 15px rgba(0, 0, 0, 0.2); /* Sombra maior e mais suave */
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
