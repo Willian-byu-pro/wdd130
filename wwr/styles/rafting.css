@@ -243,20 +243,14 @@ figcaption {
 
 
 
-.inf {
-  background-color:rgba(81, 146, 143, 0.6); /* Fundo semitransparente para legibilidade */
-  padding: 0px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Garante que cada bloco ocupe a largura da .empty-space */
-  box-sizing: border-box;
-}
+
 
 
 
 
   .empty-space {
   display: flex;
+  flex-grow: 50;
   flex-direction: row; /* Mantém os elementos empilhados horizontalmente */
   justify-content: flex-start;
   align-items: center;
@@ -287,11 +281,14 @@ figcaption {
 .inf {
 
   min-width: 240px; /* Define um tamanho mínimo para as colunas */
-  max-width: 200px; /* Limita a largura para manter a harmonia */
+  max-width: 400px; /* Limita a largura para manter a harmonia */
   padding: 20px;
   background-color: lightgray;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-flow: row;
 }
 
 
