@@ -112,6 +112,77 @@ h1, h2, h3 {
     
    }  
 
+
+
+
+   .home {
+    position: relative; /* Permite que os elementos filhos sejam posicionados de forma absoluta */
+    text-align: center; /* Centraliza os textos (opcional) */
+    overflow: hidden; /* Evita que elementos saiam do contêiner */
+  }
+  
+  .home img {
+    display: block;
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  /* Título do Hero */
+  .home h1 {
+    position: absolute; /* Posiciona o título em relação ao contêiner hero */
+    top: 20%; /* Distância do topo do contêiner */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar */
+    color: white; /* Torna o texto visível sobre a imagem */
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
+  }
+  
+  /* Artigo no Hero */
+  .home article {
+    position: absolute; /* Posiciona o artigo sobre a imagem */
+    bottom: 25%; /* Distância da base do contêiner */
+    left: 25%; /* Distância do lado esquerdo */
+    background-color:rgba(8, 37, 57, 0.6); /* Fundo semitransparente para legibilidade */
+    color: white;
+    padding: 1rem;
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 400px; /* Limita a largura do artigo */
+    width: 89%; /* Define a largura do box como 80% da largura total da tela */
+    align-items: center;
+    display: flex;
+    flex-shrink: 4;
+    flex-grow: 1;
+  }
+  
+  .home article img {
+    float: right; /* Alinha a imagem à direita do texto */
+    width: 100px; /* Define uma largura para a imagem */
+    margin-left: 10px; /* Adiciona espaço entre a imagem e o texto */
+    
+  }
+  
+  .home article p {
+    width: 100%; /* Define a largura do box como 80% da largura total da tela */
+    margin: 0; /*Remove qualquer espaço externo (margem) ao redor do parágrafo.*/
+    line-height: 1.5; /*Define o espaçamento entre as linhas do texto.*/
+    font-size: 1rem;
+  }
+
+   .home img section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção original */
+    
+   }  
+
+
+
+
+
    .adventures {
     display: flex;
     
